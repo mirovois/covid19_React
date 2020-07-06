@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+}
+/* .main-wrapper{
+
+  height: 100%;
+} */
+/***HEADER***/
+/* header{
+  font-size: 1rem;
+  background-color: rgb(111, 111, 179);
+  min-height: 5%;
+  text-align: center;
+} */
+/* nav{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+} */
+
+/* .covid-icon{
+  height: 3rem;
+  width: 3rem;
+  flex-grow: 1;
+} */
+/* header h1{
+  display: inline;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+} */
+
+/***HEADER***/
+section{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient( rgb(116, 124, 148), rgb(40, 24, 78));  
+  /* flex-wrap: wrap; */
+}
+span{
+  font-size: var(--text);
+}
+.totals{
+  /* min-height: 25%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+  
+}
+.total{
+  margin: 1rem auto;
+  background: rgb(61, 64, 121);
+  text-transform: capitalize;
+  padding: 1rem;
+}
+.total-cases{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: calc(2rem + 1vw);  
+  
+}
+.total-title{
+  font-size: calc(1rem + 1vw);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+.infected{
+  color: #210366;
+}
+.deaths{
+  color: #740d2c;
+}
+.recovered{
+  color: #07610f;
+}
+/* .country-stats{
+  display: flex;
+} */
+
+
+.country-selector{
+  /* min-height:35% ; */
+  margin:0 auto;
+  display: block;
+}
+
+select  {
+  /* outline: 0; */
+  overflow: hidden;
+  /* height: 30px; */
+  background: #1a3e64;
+  color: #aeb9c5;
+  border: #2c343c;
+  padding: 5px 3px 5px 10px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 10px;
+}
+
+.country-info{
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center;
+  margin: 1rem;
+}
+.stats-wrapper{
+  background-image: url(../src/images/bgr.jpg);
+}
+.country-stats{
+  
+  flex-grow:1 1 40rem;
+  display: flex;
+  margin: 1rem;
+}
+.total-country{
+  margin: 3rem;
+  background: rgb(61, 64, 121);
+  text-transform: capitalize;
+  padding: 1rem;
+}
+.country-amount{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: calc(1rem + 1vw);  
+}
+.chart{
+  flex-grow: 1 2 60rem;
+  object-fit: fill;
+  width: 50%;
+}
